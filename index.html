@@ -2,21 +2,28 @@
 <html>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="bootstrap-3.1.1-dist/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="css/topNav.css" rel="stylesheet" media="screen">
+<link href="css/khawna-styles.css" rel="stylesheet" media="screen">
+<script src="js/jquery.mobile.custom.min.js"></script>  
+
 </head>
 
 <body>
 
 <br>
 
-<img src="a.png"><br/>
+
+<div class="thumbnail" style="width:355px;margin-top:100px;margin-left:25px;">
+   <img src="a.png"><br/>
 
 <div style="padding-left: 10px; padding-right: 10px;">
 <form method="POST" action="http://sis2.pup.edu.ph/aims/process/validate.php?userType=1">
-<label>User Name&nbsp;</label> <input class='norm' name=txtUser type=text size=40 style="width: 100%"><br/>
-<label>Password&nbsp;&nbsp;&nbsp;</label> 
+<h4>User Name&nbsp;</label> <input class='norm' name=txtUser type=text size=40 style="width: 100%"><br/>
+<h4>Password&nbsp;&nbsp;&nbsp;</label> 
 <input class='norm' name=txtPwd type=password size=40 style="width: 100%"><br/>
-<label>Birth Date  &nbsp;</label><br/>
+<h4>Birth Date  &nbsp;</label><br/>
 <select name='cboMonth' onChange='populate(this.form,this.form.cboDay,this.form.cboMonth,this.form.cboYear);'>
           <option selected value=''></option>
           <option value='01'>January</option>
@@ -37,8 +44,8 @@
                                                                  
 
 
-<input class='input2' type=submit value='     Login      '>
-<input class='input2' type=reset value=' Clear Entries  ' onclick='javascript:this.form.txtUser.focus();'>
+<input class='btn btn-primary' type=submit value='Login'>
+<input class='btn btn-warning' type=reset value=' Clear Entries  ' onclick='javascript:this.form.txtUser.focus();'>
 </div>
 
 
@@ -48,6 +55,11 @@
 
 
 </form>
+      </div>
+  </div>
+
+
+
 
 </body>
 </html>
